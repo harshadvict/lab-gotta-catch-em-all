@@ -57,11 +57,11 @@ public class TestBulbasaur {
 	@Test
 	public void testBaseExpMethod() {
 		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR", "64" );
-		int temp = 64;
+		String temp = "64";
 		assertEquals(temp,bulbasaur.getBaseExp());		
 		try {
 			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,null);
-			temp = 0;
+			temp = null;
 			p1.getBaseExp();
 		}
 		catch(Exception e) {
