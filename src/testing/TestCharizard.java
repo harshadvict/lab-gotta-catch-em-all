@@ -56,11 +56,11 @@ public class TestCharizard {
 	@Test
 	public void testBaseExpMethod() {
 		Charizard p = new Charizard("AAA",4,"Charizard is fit and strong and has the ability to soar up to ridiculous heights. With a single breath of fire, it can burn down forests and melt gigantic glaciers.","FIRE","CHARMELEON", "240" );
-		int temp = 240;
+		String temp = "240";
 		assertEquals(temp,p.getBaseExp());		
 		try {
 			Charizard p = new Charizard(null,0,null,null,null,null);
-			temp = 0;
+			temp = null;
 			p1.getBaseExp();
 		}
 		catch(Exception e) {
