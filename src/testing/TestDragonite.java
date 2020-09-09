@@ -56,11 +56,11 @@ public class TestDragonite {
 	@Test
 	public void testBaseExpMethod() {
 		Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI", "270" );
-		int temp = 270;
+		String temp = "270";
 		assertEquals(temp,p.getBaseExp());		
 		try {
 			Dragonite p = new Dragonite(null,0,null,null,null,null);
-			temp = 0;
+			temp = null;
 			p1.getBaseExp();
 		}
 		catch(Exception e) {
